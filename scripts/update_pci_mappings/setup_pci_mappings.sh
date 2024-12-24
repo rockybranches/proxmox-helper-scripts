@@ -2,10 +2,12 @@
 
 # Run this script from the root repo directory
 
+set -e
+
 SCRIPT_LOC='/usr/local/bin/update_pci_mappings.py'
 echo -e "Copying script to '$SCRIPT_LOC' ..."
 # copy to intended script loc
-sudo cp ./scripts/update_pci_mappings.py $SCRIPT_LOC
+sudo cp ./scripts/update_pci_mappings/update_pci_mappings.py $SCRIPT_LOC
 # add executable permissions
 sudo chmod +x $SCRIPT_LOC
 
