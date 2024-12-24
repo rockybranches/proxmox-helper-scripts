@@ -14,7 +14,7 @@ sudo chmod +x $SCRIPT_LOC
 # create systemd service
 SERVICE_LOC='/etc/systemd/system/update-pci-mappings.service'
 echo -e "Creating systemd service '$SERVICE_LOC' ..."
-cat <<EOF > "$SERVICE_LOC"
+sudo cat <<EOF > "$SERVICE_LOC"
 [Unit]
 Description=Update PCI Mappings for Proxmox VE
 After=network.target local-fs.target
